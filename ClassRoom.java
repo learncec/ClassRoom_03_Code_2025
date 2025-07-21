@@ -40,4 +40,9 @@ public class ClassRoom
     {
         return size;
     }
+    
+    public void  printClassRoom()
+    {
+        System.out.println("Classroom " + roomNr + " - Computer: " + computer + " - " + size + " Students");
+    }
 }
