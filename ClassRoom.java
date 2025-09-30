@@ -4,39 +4,53 @@ public class ClassRoom
     private boolean computer;
     private int size;
     
-     public ClassRoom(String newRoomNr, boolean newComputer, int newSize)
+     public ClassRoom(String roomNr, boolean computer, int size)
     {
-        setRoomNr(newRoomNr);
-        setComputer(newComputer);
-        setSize(newSize);
+        setRoomNr(roomNr);
+        setComputer(computer);
+        setSize(size);
+    }
+    public ClassRoom(String roomNr, boolean computer)
+    {
+        setRoomNr(roomNr);
+        setComputer(computer);
+        setSize(25);
+    }
+    public ClassRoom(String roomNr)
+    {
+        setRoomNr(roomNr);
+        setComputer(false);
+        setSize(25);
+    }
+    public ClassRoom()
+    {
+        setRoomNr("C1.10");
+        setComputer(false);
+        setSize(25);
     }
     
-    public void setRoomNr(String newRoomNr)
+    public void setRoomNr(String roomNr)
     {
-        roomNr = newRoomNr;
+        this.roomNr = roomNr;
     }
-    
-    public void setComputer(boolean newComputer)
+        public void setComputer(boolean computer)
     {
-        computer = newComputer;
+        this.computer = computer;
     }
-    
-    public void setSize(int newSize)
+        public void setSize(int size)
     {
-        size = newSize;
+        this.size = size;
     }
     
     public String getRoomNr()
     {
         return roomNr;
     }
-    
-    public boolean getComputer()
+        public boolean getComputer()
     {
         return computer;
     }
-    
-    public int getSize()
+        public int getSize()
     {
         return size;
     }
