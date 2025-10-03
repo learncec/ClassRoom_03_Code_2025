@@ -55,8 +55,15 @@ public class ClassRoom
         return size;
     }
     
+    //if-Abfrage- Eigenschaft-computer-entweder ja, es gibt Computern oder nein, es gibt kein Computer
     public void  printClassRoom()
     {
-        System.out.println("Classroom " + roomNr + " - Computer: " + computer + " - " + size + " Students");
+        if(computer == true)
+        {
+        System.out.println("Der Klassenraum befindet sich: " + roomNr + ", ja, es gibt Computer in dem Raum, und es gibt insgesamt " + size + " Sitzplätze.");
+        }
+        else{
+        System.out.println("Der Klassenraum befindet sich: " + roomNr + ", nein, es gibt kein Computer in dem Raum, und es gibt insgesamt " + size + " Sitzplätze.");
+        }
     }
 }
